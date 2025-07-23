@@ -1,0 +1,95 @@
+.webapp-section {
+  padding: 60px 20px;
+  text-align: center;
+  background-color: #f9f9f9;
+}
+
+.webapp-heading {
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.webapp-subtitle {
+  font-size: 1.3rem;
+  margin-bottom: 50px;
+  color: #666;
+}
+
+.webapp-cards {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+
+.webapp-card {
+  background: #fff;
+  border-radius: 20px;
+  padding: 35px;
+  width: 400px;
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.12);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+
+.webapp-image {
+  width: 90px;
+  margin-bottom: 25px;
+}
+
+.webapp-card h3 {
+  font-size: 1.6rem;
+  margin-bottom: 12px;
+}
+
+.webapp-card p {
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.webapp-btn {
+  padding: 14px 36px;
+  background-color: #007bff;
+  color: white;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.webapp-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.webapp-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.15);
+}
+.webapp-btn:hover {
+  background-color: #0056b3;
+}
+
+@media (max-width: 768px) {
+  .webapp-section {
+    padding: 40px 15px;
+  }
+
+  .webapp-heading {
+    font-size: 1.7rem;
+    margin-bottom: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .webapp-section {
+    padding: 30px 10px;
+  }
+
+  .webapp-heading {
+    font-size: 1.7rem;
+    margin-bottom: 10px;
+  }
+}

@@ -1,0 +1,154 @@
+.internship-section {
+  padding: 40px 30px;
+  background: #f5f7fa;
+  margin-top: 80px !important;
+  scroll-margin-top: 100px; 
+}
+
+
+.internship-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.internship-text {
+  flex: 1;
+  max-width: 650px;
+  text-align: left;
+}
+
+.internship-section h2 {
+  font-size: 2.5rem;
+  color: #001d42;
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.internship-subtitle {
+  font-size: 1.6rem;
+  color: #555;
+  margin-bottom: 25px;
+}
+
+.internship-desc {
+  font-size: 1.3rem;
+  color: #666;
+  margin-bottom: 25px;
+}
+
+.internship-features {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 35px;
+}
+
+.internship-features li {
+  font-size: 1.25rem;
+  color: #444;
+  margin-bottom: 12px;
+}
+
+.internship-btn {
+  background: linear-gradient(135deg, #041a2c 0%, #123659 100%);
+  color: white;
+  padding: 14px 32px;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 12px;
+  transition: background 0.3s;
+  cursor: pointer;
+}
+
+.internship-btn:hover {
+  background: #0056b3;
+}
+
+.internship-img {
+  flex: 1;
+  max-width: 600px;
+}
+
+.internship-img img {
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+  box-shadow: 0 16px 48px rgba(0, 0, 0, 0.2);
+  margin-top: 50px;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1200px) {
+  .internship-container {
+    gap: 20px;
+  }
+
+  .internship-text {
+    max-width: 500px;
+  }
+
+  .internship-img {
+    max-width: 500px;
+  }
+}
+
+@media (max-width: 768px) {
+  .internship-container {
+    gap: 20px;
+    flex-direction: column;
+  }
+
+  .internship-section h2 {
+    font-size: 1.7rem;
+  }
+
+  .internship-text,
+  .internship-img {
+    max-width: 100%;
+    text-align: left;
+  }
+
+  .internship-img img {
+    margin-top: 20px;
+  }
+
+  .internship-btn {
+    padding: 12px 28px;
+    font-size: 1.1rem;
+  }
+
+  .internship-subtitle {
+    font-size: 1.4rem;
+  }
+
+  .internship-desc {
+    font-size: 1.1rem;
+  }
+
+  .internship-features li {
+    font-size: 1.15rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .internship-btn {
+    padding: 10px 24px;
+    font-size: 1rem;
+  }
+
+  .internship-subtitle {
+    font-size: 1.2rem;
+  }
+
+  .internship-desc {
+    font-size: 1rem;
+  }
+
+  .internship-features li {
+    font-size: 1rem;
+  }
+}

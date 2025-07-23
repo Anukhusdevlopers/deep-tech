@@ -1,0 +1,358 @@
+/* About Section CSS */
+:root {
+  --primary-dark-blue: #142c73;
+  --highlight-yellow: #fcb830;
+  --white: #ffffff;
+  --deep-blue: #1b2b78;
+  --light-purple-gray: #868eb2;
+}
+
+.about-section {
+  position: relative;
+  /* width: 100%; */
+  padding: 120px 2rem;
+  background: linear-gradient(135deg, var(--white) 0%, #f8faff 100%);
+  /* overflow: hidden; */
+  isolation: isolate;
+  scroll-margin-top: 80px;
+  display: flex;
+  margin: 0 auto;
+  gap: 3rem;
+  align-items: center;
+}
+
+.about-container {
+  display: flex;
+  max-width: 1280px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 2rem;
+  gap: 4rem;
+  align-items: center;
+}
+
+.about-image-wrapper {
+  /* flex: 1; */
+  position: relative;
+  min-width: 300px;
+  width: 40%;
+}
+
+.image-frame {
+  position: relative;
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: 0 32px 64px rgba(20, 44, 115, 0.15);
+  transform: perspective(1000px) rotateY(-5deg) rotateX(2deg);
+  transition: transform 0.6s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.image-frame:hover {
+  transform: perspective(1000px) rotateY(0deg) rotateX(0deg) scale(1.02);
+}
+
+.about-image {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4/5;
+  object-fit: cover;
+  display: block;
+  border: 2px solid rgba(252, 184, 48, 0.3);
+  border-radius: 24px;
+}
+
+.image-highlight {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle at 70% 30%, rgba(252, 184, 48, 0.1) 0%, transparent 60%);
+  z-index: 1;
+  pointer-events: none;
+}
+
+.floating-badge {
+  position: absolute;
+  top: 30px;
+  right: -20px;
+  background: var(--highlight-yellow);
+  color: var(--deep-blue);
+  padding: 10px 20px;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 700;
+  font-size: 0.95rem;
+  box-shadow: 0 8px 24px rgba(252, 184, 48, 0.3);
+  z-index: 2;
+  transform: rotate(5deg);
+  animation: float 6s ease-in-out infinite;
+}
+
+.about-content {
+  /* flex: 1; */
+  width: 55%;
+  min-width: 300px;
+}
+
+.section-tag {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 1.5rem;
+}
+
+.section-tag span {
+  color: var(--highlight-yellow);
+  font-weight: 700;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.section-tag .tag-line {
+  flex: 1;
+  height: 2px;
+  background: linear-gradient(90deg, var(--highlight-yellow), rgba(252, 184, 48, 0.1));
+}
+
+.about-title {
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 800;
+  line-height: 1.2;
+  color: var(--deep-blue);
+  margin-bottom: 1rem;
+  margin-top: 0;
+}
+
+.about-title span {
+  color: var(--highlight-yellow);
+  position: relative;
+}
+
+.about-title span::after {
+  content: '';
+  position: absolute;
+  bottom: 5px;
+  left: 0;
+  width: 100%;
+  height: 8px;
+  background: rgba(252, 184, 48, 0.25);
+  z-index: -1;
+  border-radius: 4px;
+}
+
+.about-subtitle {
+  font-size: 1.25rem;
+  color: var(--light-purple-gray);
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+
+.about-description {
+  margin-bottom: 2rem;
+}
+
+.about-description p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: var(--light-purple-gray);
+  margin-bottom: 1.2rem;
+}
+
+.about-description strong {
+  color: var(--primary-dark-blue);
+  font-weight: 700;
+}
+
+.about-features {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2.5rem;
+}
+
+.feature-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.feature-icon {
+  color: var(--highlight-yellow);
+  display: flex;
+}
+
+.feature-item span {
+  color: var(--deep-blue);
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.consultation-button {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 1rem 2rem;
+  border-radius: 12px;
+  font-weight: 700;
+  font-size: 1.1rem;
+  cursor: pointer;
+  border: none;
+  overflow: hidden;
+  transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+  background: var(--highlight-yellow);
+  color: var(--deep-blue);
+  box-shadow: 0 8px 24px rgba(252, 184, 48, 0.25);
+  z-index: 1;
+}
+
+.consultation-button span {
+  position: relative;
+  z-index: 2;
+}
+
+.consultation-button .button-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease;
+  z-index: 2;
+}
+
+.consultation-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 32px rgba(252, 184, 48, 0.35);
+}
+
+.consultation-button:hover .button-icon {
+  transform: translateX(4px);
+}
+
+.consultation-button .button-hover-effect {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(45deg, transparent, rgba(255, 255, 255, 0.4), transparent);
+  transform: translateX(-100%);
+  transition: transform 0.6s ease;
+  z-index: 1;
+}
+
+.consultation-button:hover .button-hover-effect {
+  transform: translateX(100%);
+}
+
+/* Animations */
+@keyframes float {
+
+  0%,
+  100% {
+    transform: translateY(0) rotate(5deg);
+  }
+
+  50% {
+    transform: translateY(-10px) rotate(8deg);
+  }
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+  .about-container {
+    gap: 3rem;
+  }
+
+  .about-section{
+    flex-direction: column-reverse;
+    padding: 4rem 2rem;
+  }
+
+  .about-image-wrapper{
+    width: 95%;
+  }
+
+  .about-image-wrapper img{
+   height: 400px;
+  }
+
+  .about-content{
+    width: 95%;
+    /* text-align: center; */
+  }
+
+  
+  .about-content .section-tag{
+    /* width: 95%; */
+    display: flex;
+    justify-self: center;
+  }
+
+  .about-content .about-title{
+    /* width: 95%; */
+    text-align: center;
+  }
+
+   .about-content .about-subtitle{
+    /* width: 95%; */
+    text-align: center;
+    margin-bottom: 4rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-section {
+    padding: 80px 0;
+  }
+
+
+  .about-image-wrapper {
+    margin-bottom: 3rem;
+  }
+
+  .section-tag {
+    justify-content: center;
+  }
+
+  /* .about-features {
+    align-items: center;
+  } */
+
+  .floating-badge {
+    right: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-section {
+    padding: 60px 0;
+  }
+
+  .about-container {
+    padding: 0 1.5rem;
+  }
+
+  .about-title {
+    font-size: 1.8rem;
+  }
+
+  .about-subtitle {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    line-height: 1.4;
+    color: var(--light-purple-gray);
+  }
+
+  .about-description p {
+    font-size: 1rem;
+  }
+
+  .consultation-button {
+    width: 100%;
+    padding: 0.9rem 1.5rem;
+  }
+}

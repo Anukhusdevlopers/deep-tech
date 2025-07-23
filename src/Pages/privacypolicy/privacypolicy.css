@@ -1,0 +1,50 @@
+.privacy-container {
+  padding: 40px 20px;
+  max-width: 900px;
+  margin: auto;
+  background-color: #f9f9f9;
+}
+
+.privacy-card {
+  background-color: #fff;
+  padding: 30px;
+  margin-bottom: 24px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.privacy-container h2{
+  color: #2c3e50;
+  margin-bottom: 16px;
+  padding-left: 12px;
+  text-align: center;
+  font-size: 29px;
+}
+
+
+
+.privacy-card h3 {
+  color: #2c3e50;
+  margin-bottom: 16px;
+  border-left: 4px solid crimson;
+  padding-left: 12px;
+}
+
+.privacy-card p, .privacy-card li {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333;
+}
+
+.privacy-card ul {
+  padding-left: 20px;
+  margin-top: 8px;
+}
+
+a {
+  color: crimson;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
