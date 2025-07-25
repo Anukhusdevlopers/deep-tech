@@ -26,10 +26,11 @@ export default function Footer() {
   return (
     <footer className="footer">
 
+
       <div className="footer-container">
         <div className="footer-content">
           <div className="footer-brand">
-            <h2 className="footer-logo">Deep Tech</h2>
+            <h2 className="footer-logo">Deep Stack Tech</h2>
             <p className="footer-tagline">
               Transforming education through innovative technology solutions
             </p>
@@ -145,7 +146,7 @@ export default function Footer() {
                   </div>
                   <div className="contact-text">
 
-                    <Link style={{ textDecoration: 'none' }} to='mailto:khushboopanday05@gmail.com'>  <p>khushboopanday05@gmail.com</p> </Link>
+                    <Link style={{ textDecoration: 'none' }} to='mailto:deeptech2087@gmail.com'>  <p>deeptech2087@gmail.com</p> </Link>
                   </div>
                 </div>
               </ul>
@@ -195,7 +196,7 @@ export default function Footer() {
             {/* <Link to="/cookie-policy">Cookie Policy</Link> */}
           </div>
           <div className="footer-copyright">
-            © {new Date().getFullYear()} Deep Tech. All rights reserved.
+            © {new Date().getFullYear()} Deep Stack Tech. All rights reserved.
           </div>
         </div>
       </div>

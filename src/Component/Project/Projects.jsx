@@ -73,14 +73,6 @@ const Projects = () => {
       type: 'Website'
     },
     {
-      image: portfolio,
-      title: 'Portfolio',
-      description: 'Personal portfolio website for explaing myself.',
-      link: 'https://symbiosisuniversity.tech/',
-      type: 'Website'
-    },
-    ,
-    {
       image: chef,
       title: 'NMIMS School',
       description: 'This one is created for admission purpose.',
@@ -108,7 +100,7 @@ const Projects = () => {
       link: 'https://symbiosisuniversity.tech/',
       type: 'Website'
     }
-    
+
   ];
 
   const scrollLeft = () => {
@@ -138,7 +130,7 @@ const Projects = () => {
       </div>
 
       <div className="slider-controls">
-        <button className="arrow-btn left" onClick={scrollLeft}>
+        <button className="arrow-btn left desktop" onClick={scrollLeft}>
           <ChevronLeft size={36} />
         </button>
 
@@ -168,9 +160,16 @@ const Projects = () => {
           ))}
         </div>
 
-        <button className="arrow-btn right" onClick={scrollRight}>
-          <ChevronRight size={36} />
-        </button>
+        <div style={{display:'flex', gap:'24px', alignItems:'center'}}>
+
+          <button className="arrow-btn left mobile" onClick={scrollLeft}>
+            <ChevronLeft size={36} />
+          </button>
+          <button className="arrow-btn right" onClick={scrollRight}>
+            <ChevronRight size={36} />
+          </button>
+        </div>
+
       </div>
     </section>
   );

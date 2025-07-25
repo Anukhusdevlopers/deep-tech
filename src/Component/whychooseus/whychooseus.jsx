@@ -59,7 +59,7 @@ const WhyChooseUs = () => {
             <span>Our Advantages</span>
           </div>
           <h2 className="section-title">
-            Why Choose <span>Deep Tech</span>
+            Why Choose <span>Deep Stack Tech</span>
           </h2>
           <p className="section-description">
             We deliver exceptional value through our unique combination of

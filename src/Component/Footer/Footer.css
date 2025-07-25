@@ -58,7 +58,7 @@
 
 .footer-tagline {
   font-size: 1.1rem;
-  color: var(--light-purple-gray);
+  color: var(--white);
   max-width: 400px;
   line-height: 1.6;
   margin-bottom: 25px;
@@ -174,7 +174,7 @@
   display: flex;
   align-items: center;
   gap: 10px;
-  color: var(--light-purple-gray);
+  color: var(--white);
   text-decoration: none;
   transition: all 0.3s ease;
   padding: 8px 0;
@@ -252,7 +252,8 @@
   width: 36px;
   height: 36px;
   border-radius: 50%;
-  background: linear-gradient(135deg, var(--highlight-yellow) 30%, var(--primary-dark-blue) 100%);
+  background-color: var(--highlight-yellow);
+  /* background: linear-gradient(135deg, var(--highlight-yellow) 30%, var(--primary-dark-blue) 100%); */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -271,7 +272,7 @@
 
 .contact-text p {
   font-size: 1rem;
-  color: var(--light-purple-gray);
+  color: var(--white);
   margin: 0;
   text-align: start;
 }
@@ -293,7 +294,7 @@
 }
 
 .footer-legal a {
-  color: var(--light-purple-gray);
+  color: var(--white);
   text-decoration: none;
   font-size: 0.9rem;
   transition: color 0.3s ease;
@@ -321,7 +322,7 @@
 
 .footer-copyright {
   font-size: 0.9rem;
-  color: var(--light-purple-gray);
+  color: var(--white);
   text-align: center;
 }
 

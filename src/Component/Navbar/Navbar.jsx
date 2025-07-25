@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Menu, X, Code, ChevronDown } from 'lucide-react';
 import './Navbar.css';
 import { HashLink as Link } from 'react-router-hash-link';
-import logo from '../../assets/Logo/5.png'
+import logo from '../../assets/Logo/6.png'
 
 const Navbar = ({ onLoginClick }) => {
   const [isScrolled, setIsScrolled] = useState(false);

@@ -132,6 +132,9 @@
   opacity: 0;
   transform: translateY(30px);
   animation: fadeInUp 0.8s cubic-bezier(0.23, 1, 0.32, 1) forwards;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .why-card.animate {
@@ -170,8 +173,10 @@
   font-size: 1.3rem;
   font-weight: 700;
   color: var(--deep-blue);
-  margin-bottom: 16px;
+  /* margin-bottom: 8px; */
   transition: color 0.3s ease;
+  margin: 0;
+  text-align: center;
 }
 
 .why-card:hover .card-title {
@@ -183,6 +188,7 @@
   color: var(--light-purple-gray);
   line-height: 1.6;
   transition: color 0.3s ease;
+  text-align: center;
 }
 
 .why-card:hover .card-description {

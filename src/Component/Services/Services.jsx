@@ -48,11 +48,16 @@ const Services = () => {
     title: 'Digital Marketing',
     desc: 'Drive growth and visibility with our result-driven digital marketing strategies.',
   },  
-  //  {
-  //   icon: <FaCloud />,
-  //   title: 'Cloud Services',
-  //   desc: 'Seamless cloud migration and\nmanagement solutions.',
-  // },
+   {
+    icon: <FaCloud />,
+    title: 'UI UX Design',
+    desc: 'Design are two closely related fields focused on creating user-friendly and engaging digital products.',
+  },
+   {
+    icon: <FaCloud />,
+    title: 'Cloud Services',
+    desc: 'Seamless cloud migration and\nmanagement solutions.',
+  },
   // {
   //   icon: <FaShieldAlt />,
   //   title: 'Deployment',

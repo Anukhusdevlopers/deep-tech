@@ -478,3 +478,41 @@
   width: 280px;
   scroll-snap-align: start;
 }
+
+.arrow-btn.mobile {
+  display: none; /* Hide right arrow on mobile */
+}
+
+@media (max-width: 550px) {
+  .slider-controls {
+    /* position: static; */
+    margin-top: 16px;
+    justify-content: center;
+    gap: 1rem;
+    width: 100%;
+  }
+
+  .arrow-btn {
+    height: 40px;
+    width: 40px;
+  }
+
+  .arrow-btn.left.mobile{
+    display: flex;
+  }
+
+
+  .slider-controls{
+    flex-direction: column;
+  }
+
+  .arrow-btn.desktop {
+    display: none; /* Hide left arrow on mobile */
+  }
+
+  .projects-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}

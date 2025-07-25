@@ -48,7 +48,7 @@ const About = () => {
 
           <div className="about-description">
             <p>
-              At <strong>Deep Tech</strong>, we bridge the gap between
+              At <strong>Deep Stack Tech</strong>, we bridge the gap between
               technology and education, empowering businesses worldwide to
               achieve their strategic objectives through cutting-edge digital
               solutions.

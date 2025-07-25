@@ -198,9 +198,11 @@
   z-index: 99;
 }
 
-.navbar-mobile-toggle.active{
-  z-index: 99;
-  position: absolute;
+.navbar-mobile-toggle.active {
+  z-index: 1001; /* must be higher than .navbar-links */
+  position: fixed; /* better than absolute for fullscreen overlays */
+  top: 1.5rem;
+  right: 1.5rem;
 }
 
 .navbar-mobile-toggle:hover {
