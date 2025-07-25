@@ -18,14 +18,14 @@ const TermsOfService = () => {
 
       <div className="terms-card">
         <p data-aos="fade-up">
-          Welcome to Code Tools. By accessing or using our coding utilities, tools, website features, or developer resources, you agree to abide by these terms and conditions governed by the laws of India.
+          Welcome to Deep Stack Tech. By accessing or using our coding utilities, tools, website features, or developer resources, you agree to abide by these terms and conditions governed by the laws of India.
         </p>
       </div>
 
       <div className="terms-card">
         <h3 data-aos="fade-up">Nature of Our Services</h3>
         <p data-aos="fade-up" data-aos-delay="100">
-          Code Tools is a digital utility platform providing developers with code formatting, debugging, documentation, and code testing tools.
+          Deep Stack Tech is a digital utility platform providing developers with code formatting, debugging, documentation, and code testing tools.
         </p>
         <p data-aos="fade-up" data-aos-delay="200">
           We do not offer hosting, compilation-as-a-service, or paid developer infrastructure. Our services are browser-based and depend on public libraries and client-side execution.
@@ -48,7 +48,7 @@ const TermsOfService = () => {
           All tools are subject to availability and may be temporarily unavailable due to maintenance, upgrades, or technical issues.
         </p>
         <p data-aos="fade-up" data-aos-delay="200">
-          Code Tools does not guarantee uninterrupted access and is not liable for downtime or feature changes.
+          Deep Stack Tech does not guarantee uninterrupted access and is not liable for downtime or feature changes.
         </p>
       </div>
 
@@ -64,7 +64,7 @@ const TermsOfService = () => {
       <div className="terms-card">
         <h3 data-aos="fade-up">Limitation of Liability</h3>
         <p data-aos="fade-up" data-aos-delay="100">
-          Code Tools is not liable for any data loss, coding errors, or indirect damages caused by use of the tools.
+          Deep Stack Tech is not liable for any data loss, coding errors, or indirect damages caused by use of the tools.
         </p>
         <p data-aos="fade-up" data-aos-delay="200">
           All services are provided “as-is” without any guarantees of accuracy or uptime.
@@ -95,7 +95,7 @@ const TermsOfService = () => {
       <div className="terms-card">
         <h3 data-aos="fade-up">Grievance Redressal</h3>
         <p data-aos="fade-up" data-aos-delay="100">
-          For questions or complaints, contact us at 📧 <a href="mailto:khushboopanday05@gmail.com">khushboopanday05@gmail.com</a>
+          For questions or complaints, contact us at 📧 <a href="mailto:deeptech2087@gmail.com">deeptech2087@gmail.com</a>
         </p>
         <p data-aos="fade-up" data-aos-delay="200">
           We respond within 14 days in accordance with the Consumer Protection Act, 2019.

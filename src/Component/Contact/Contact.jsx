@@ -6,12 +6,13 @@ import "./Contact.css";
 import success from "../../assets/success.webp";
 import contactImage from "../../assets/contact.jpg";
 import axios from "axios";
+import { Link } from "react-router-dom";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
-    phone: "",
+    phone: "",  
     message: "",
   });
   const [loading, setLoading] = useState(false);
@@ -115,7 +116,7 @@ const Contact = () => {
             </div>
             <div>
               <h4>Phone</h4>
-              <p>+91 87070 87926</p>
+              <Link to='tel:+918707087926'><p>+91 87070 87926</p></Link>
             </div>
           </div>
 
@@ -125,7 +126,7 @@ const Contact = () => {
             </div>
             <div>
               <h4>Email</h4>
-              <p>deeptech2087@gmail.com</p>
+              <Link to='mailto:deeptech2087@gmail.com'><p>deeptech2087@gmail.com</p></Link>
             </div>
           </div>
 

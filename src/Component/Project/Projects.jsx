@@ -102,14 +102,18 @@ const Projects = () => {
     }
 
   ];
-
   const scrollLeft = () => {
-    sliderRef.current.scrollBy({ left: -300, behavior: 'smooth' });
+    if (sliderRef.current) {
+      sliderRef.current.scrollBy({ left: -300, behavior: 'smooth' });
+    }
   };
 
   const scrollRight = () => {
-    sliderRef.current.scrollBy({ left: 300, behavior: 'smooth' });
+    if (sliderRef.current) {
+      sliderRef.current.scrollBy({ left: 300, behavior: 'smooth' });
+    }
   };
+
 
   return (
     <section className="popular-courses" id="project">
@@ -129,9 +133,10 @@ const Projects = () => {
         </div>
       </div>
 
-      <div className="slider-controls">
-        <button className="arrow-btn left desktop" onClick={scrollLeft}>
-          <ChevronLeft size={36} />
+      <div className="slider-container">
+        {/* Left Arrow (desktop only) */}
+        <button className="arrow-btn arrow-left" onClick={scrollLeft}>
+          <ChevronLeft size={24} />
         </button>
 
         <div className="courses-slider" ref={sliderRef}>
@@ -160,16 +165,29 @@ const Projects = () => {
           ))}
         </div>
 
-        <div style={{display:'flex', gap:'24px', alignItems:'center'}}>
 
+        {/* <div className="arrow-group-mobile">
           <button className="arrow-btn left mobile" onClick={scrollLeft}>
-            <ChevronLeft size={36} />
+            <ChevronLeft size={24} />
           </button>
-          <button className="arrow-btn right" onClick={scrollRight}>
-            <ChevronRight size={36} />
-          </button>
-        </div>
 
+          <button className="arrow-btn left mobile" onClick={scrollRight}>
+            <ChevronRight size={24} />
+          </button>
+        </div> */}
+        <button className="arrow-btn arrow-right" onClick={scrollRight}>
+          <ChevronRight size={24} />
+        </button>
+
+      </div>
+
+      <div className="arrow-buttons-mobile">
+        <button className="arrow-btn" onClick={scrollLeft}>
+          <ChevronLeft size={24} />
+        </button>
+        <button className="arrow-btn" onClick={scrollRight}>
+          <ChevronRight size={24} />
+        </button>
       </div>
     </section>
   );

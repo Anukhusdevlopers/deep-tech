@@ -510,9 +510,81 @@
     display: none; /* Hide left arrow on mobile */
   }
 
+
   .projects-section {
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+}
+
+
+.arrow-group-mobile {
+  display: none;
+}
+
+@media (max-width: 550px) {
+  .arrow-group-mobile {
+    /* height: 30px; */
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    margin-top: 16px;
+  }
+}
+
+.slider-container {
+  display: flex;
+  align-items: center;
+  position: relative;
+  gap: 1rem;
+}
+/* 
+.courses-slider {
+  display: flex;
+  gap: 16px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding: 10px 0;
+  flex-grow: 1;
+} */
+
+.course-card {
+  min-width: 240px;
+  height: 140px;
+  background: #f5f5f5;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+/* Arrow button common */
+
+
+/* Desktop left/right arrows */
+.arrow-left,
+.arrow-right {
+  display: flex;
+}
+
+@media (max-width: 768px) {
+  .arrow-left,
+  .arrow-right {
+    display: none; /* hide desktop arrows in mobile */
+  }
+
+  .arrow-buttons-mobile {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    margin-top: 12px;
+  }
+}
+
+@media (min-width: 769px) {
+  .arrow-buttons-mobile {
+    display: none; /* hide mobile arrows in desktop */
   }
 }

@@ -18,7 +18,7 @@ const PrivacyPolicy = () => {
 
       <div className="privacy-card">
         <p data-aos="fade-up">
-          Code Tools is a developer-focused web application built to assist programmers with utilities like code formatting, debugging tools, documentation generators, and API testing environments.
+          Deep Stack Tech is a developer-focused web application built to assist programmers with utilities like code formatting, debugging tools, documentation generators, and API testing environments.
         </p>
         <p data-aos="fade-up" data-aos-delay="100">
           This is an independently developed platform and does not represent or affiliate with any official software company, development firm, or commercial provider.
@@ -73,10 +73,10 @@ const PrivacyPolicy = () => {
       <div className="privacy-card">
         <h3 data-aos="fade-up">Developer Contact</h3>
         <p data-aos="fade-up" data-aos-delay="100">
-          This project is independently built and maintained by a solo developer.
+          This project is independently built and maintained by a Deep Stack Tech Team.
         </p>
         <p data-aos="fade-up" data-aos-delay="200">
-          📧 <a href="mailto:khushboopanday05@gmail.com">khushboopanday05@gmail.com</a>
+          📧 <a href="mailto:deeptech2087@gmail.com">deeptech2087@gmail.com</a>
         </p>
       </div>
     </div>
